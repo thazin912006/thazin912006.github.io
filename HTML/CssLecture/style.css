@@ -1,0 +1,7 @@
+small{
+    color: blueviolet;
+    text-transform: capitalize;
+    word-spacing: 10px;
+    letter-spacing: 20px;
+    line-height: 40px;
+}

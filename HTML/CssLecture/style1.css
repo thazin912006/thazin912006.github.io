@@ -1,0 +1,36 @@
+/* Universal Selector */
+*{
+    /* color: #000; */
+    /* margin: 0; */
+    /* padding: 0; */
+}
+/* tag selector/element selector */
+h1{
+    color: aqua;
+    text-align: center;
+}
+/* attribute selector */
+/* a[title=google]
+{
+    color: blueviolet;
+} */
+/* ID selector */
+#idselector{
+    color: #000;
+    font-size: 20px;
+}
+/* class selector */
+.classselector{
+    color: beige;
+    text-transform: capitalize;
+    font-size: 30px;
+    text-indent: 50px;
+}
+/* Descendant Selector */
+.desc a{
+    color: #ac2121;
+}
+/* Child Selector */
+.child>a{
+    color: #234313;
+}
