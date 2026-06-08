@@ -1,8 +1,8 @@
 /* Universal Selector */
 *{
     /* color: #000; */
-    /* margin: 0; */
-    /* padding: 0; */
+     margin: 0; 
+    padding: 0;
 }
 /* tag selector/element selector */
 h1{
@@ -33,4 +33,64 @@ h1{
 /* Child Selector */
 .child>a{
     color: #234313;
+}
+/* Border */
+.border1{
+    border: 2px solid greenyellow;
+    /* size style color */
+}
+.border2{
+    border-bottom: 3px dashed goldenrod;
+}
+/* border width */
+.border3{
+    border-style: double;
+    /* border-width: 5px; */
+    /* Top,Right,Bottom,Left */
+    /* border-width: 5px 10px */
+    /* T&B R&L */
+    /* border-width: 5px 10px 15px */
+    /* T R&L B */
+    border-width: 5px 10px 15px 20px;
+}
+/* border style border color */
+.border4{
+    /* border-style: solid; */
+    /* border-style: solid dotted; */
+    /* border-style: solid dotted dashed; */
+    border-width: 5px;
+    border-style: solid dotted dashed double;
+    /* border-color: burlywood; */
+    /* border-color: burlywood grey; */
+    /* border-color: burlywood grey violet; */
+    border-color: burlywood grey violet royalblue;
+}
+/* margin */
+.margin{
+    border: 5px solid blueviolet;
+    margin-top: 50px;
+    /* margiin-bottom */
+    /* margin-right */
+    /* margin-left */
+    /* margin: 5px 10px 15px 20px */
+}
+/* padding */
+.padding{
+    border: 3px dashed violet;
+    padding-right: 30px ;
+     /* padding-bottom */
+    /* padding-top */
+    /* padding-left */
+    /* padding: 5px 10px 15px 20px */
+}
+/* Layout */
+.inline{
+    border: 2px solid green;
+    width: 300px;
+    display: inline-block;
+}
+.block{
+    border: 2px solid green;
+    width: 300px;
+    display: inline-block;
 }
