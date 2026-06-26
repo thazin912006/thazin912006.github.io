@@ -94,3 +94,137 @@ h1{
     width: 300px;
     display: inline-block;
 }
+/* Float */
+.float_right_img{
+    width: 50%;
+    float: right;
+}
+/* clear */
+.clear{
+    clear: both;
+}
+.float_left_img{
+    width: 50%;
+    float: left;
+}
+/* flex */
+.flex{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    align-items: center;
+    /* top buttom */
+    justify-content: center;
+    height: 100px;
+    background-color: aqua;
+}
+/* grid */
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    /* grid-template-columns: auto auto auto; */
+    color: aquamarine;
+    /* grid-row-gap: 40px; */
+    /* grid-column-gap:30px ; */
+    /* grid-gap: 30px; */
+}
+.grid_child,.grid div{
+    padding: 20px;
+    text-align: center;
+}
+.row-add{
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.column-add{
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+.media img{
+    width: 100%;
+}
+@media screen and (max-width: 1024px){
+    .media{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media screen and (max-width: 728px){
+    .media{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media screen and (max-width: 600px){
+    .media{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+/* mobile first */
+/* .media{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-gap: 20px;
+}
+@media screen and (min-width: 600px){
+    .media{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media screen and (min-width: 728px){
+    .media{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media screen and (min-width: 1024px){
+    .media{
+        grid-template-columns: repeat(3,1fr);
+    }
+} */
+ /* position */
+ .position_relative{
+    border: 2px solid goldenrod;
+    width: 4099px;
+    height: 300px;
+ }
+ .position_relative_child{
+    border: 2px solid gainsboro;
+    width: 399px;
+    height: 30px;
+    position: relative;
+    /* top buttom left right */
+    top: 4px;
+    left: 40px;
+ }
+ .absolute_position{
+    border: 2px solid rgb(28, 60, 82);
+    width: 4099px;
+    height: 300px;
+    position: relative;
+ }
+ .absolute_position_child{
+    border: 2px solid rgb(101, 15, 48);
+    width: 399px;
+    height: 30px;
+    position: absolute;
+    /* top buttom left right */
+    top: 4px;
+    left: 40px;
+ }
+ .fixed_position{
+    position: fixed;
+    top: 50px;
+    right: 50px;
+ }
+ /* font */
+.online_font{
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+@font-face {
+    font-family: url(static/);
+    src: url();
+}
+.offline_font{
+    font-family: abc;
+}

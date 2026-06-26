@@ -1,0 +1,464 @@
+@font-face {
+    font-family: 'static' ;
+    src: url(Roboto_Condensed/static/RobotoCondensed-Italic.ttf);
+}
+/* Universal Selector */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'static';
+}
+/* Start Navigation */
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 100px;
+    box-shadow: 0px 1px 5px aquamarine;
+}
+.logo{
+    width: 160px;
+    height: 90px;
+}
+.nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+.nav ul li{
+    margin-left: 50px;
+}
+.nav_item{
+    text-decoration: none;
+    color: gold;
+    font-size: 20px;
+}
+.nav_item:hover{
+    display: inline-block;
+    color:teal;
+    transform: translateY(-5px);
+    transition: 0.5s;
+}
+.nav_item:visited{
+    display: inline-block;
+    color: violet;
+}
+.Enrol{
+    text-decoration: none;
+    border: 2px solid rgb(8, 73, 35);
+    background-color: rgb(8, 73, 35);
+    color:wheat;
+    font-size: 18px;
+    padding: 6px 14px;
+    border-radius: 10px;
+}
+.Enrol:hover{
+    display: inline-block;
+    color: aqua;
+    transform: translateY(-5px);
+    transition: 0.5s;
+}
+.Enrol:visited{
+    display: inline-block;
+    color: violet;
+}
+/* End Navagation */
+/* Start index */
+/* Start Banner */
+.home{
+    width: 95%;
+    height: 700px;
+    margin: 50px;
+}
+.ht1{
+    font-size: 30px;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: capitalize;
+    text-shadow: 2px 2px 5px teal;
+}
+.courses {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 50px;
+}
+.courses img{
+    width: calc(25% - 20px);
+}
+.pop_title{
+    padding: 20px;
+    margin: 0;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: capitalize;
+    text-shadow: 2px 2px 5px teal;
+}
+.popular{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    padding: 20px;
+}
+.card{
+    width: 400px;
+    border: 1px solid teal;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px goldenrod;
+    transition: transform 0.3s;
+}
+.card:hover{
+    transform: scale(1.02);
+}
+.pop_card{
+    width: 100%;
+    height: 325px;
+    object-fit: cover;
+    display: block;
+}
+.card h3{
+    padding: 10px;
+    margin: 0;
+}
+.adv_title{
+    padding: 20px;
+    margin: 0;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: capitalize;
+    text-shadow: 2px 2px 5px teal;
+}
+.adv{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    padding: 20px;
+}
+.adv1{
+    width: 400px;
+    border: 1px solid teal;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px goldenrod;
+    transition: transform 0.3s;
+}
+.adv1:hover{
+     transform: scale(1.02);
+}
+.adv_card{
+    width: 100%;
+    height: 325px;
+    object-fit: cover;
+    display: block;
+}
+.adv1 h3{
+    padding: 10px;
+    margin: 0;
+}
+.read-more{
+    text-decoration: none;
+    border: 2px solid rgb(8, 73, 35);
+    background-color: rgb(8, 73, 35);
+    color:wheat;
+    font-size: 18px;
+    padding: 6px 14px;
+    border-radius: 10px;
+}
+.read-more:hover{
+    display: inline-block;
+    color: aqua;
+    transform: translateY(-5px);
+    transition: 0.5s;
+}
+/* End Banner */
+/* End index */
+/* Start Course */
+/* Start Banner */
+.course_title h1{
+    padding: 20px;
+    margin: 0;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: capitalize;
+    text-shadow: 2px 2px 5px teal;
+}
+.course_title h2{
+    padding: 20px;
+    margin: 0;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: capitalize;
+    text-shadow: 1px 1px 2.5px teal;
+}
+.comb1{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    padding: 20px;
+}
+.comb{
+    width: 400px;
+    border: 1px solid teal;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px goldenrod;
+    transition: transform 0.3s;
+}
+.comb:hover{
+    transform: scale(1.02);
+}
+.comb_img{
+    width: 100%;
+    height: 325px;
+    object-fit: cover;
+    display: block;
+}
+.course_title h3{
+    padding: 10px;
+    margin: 0;
+}
+.offer_title h1{
+    padding: 20px;
+    margin: 0;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: capitalize;
+    text-shadow: 2px 2px 5px teal;
+}  
+.offer_title h2{
+    padding: 20px;
+    margin: 0;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: capitalize;
+    text-shadow: 1px 1px 2.5px teal;
+} 
+.offer{
+     display: flex;
+    gap: 30px;
+    justify-content: center;
+    padding: 20px;
+}
+.offer1{
+    width: 400px;
+    border: 1px solid teal;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px goldenrod;
+    transition: transform 0.3s;
+}
+.offer1:hover{
+    transform: scale(1.02);
+}
+.offer_img{
+    width: 100%;
+    height: 325px;
+    object-fit: cover;
+    display: block;
+}
+.offer_title h3{
+    padding: 10px;
+    margin: 0;
+}
+/* Start About */
+.about h1{
+    padding: 20px;
+    margin: 0;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: capitalize;
+    text-shadow: 2px 2px 5px teal;
+}
+.about h2{
+    padding: 20px;
+    margin: 0;
+    font-size: 20px;
+    text-align: center;
+    text-transform: capitalize;
+    text-shadow: 1px 1px 2.5px teal;
+}
+.about_text_b{
+    padding: 20px;
+    margin: 0;
+    font-size: 20px;
+    text-align: center;
+    text-transform: capitalize;
+    text-shadow: 1px 1px 2.5px rgb(238, 217, 34);
+}
+.about_text{
+    margin: 50px;
+    font-size: 18px;
+}
+/* End About */
+/* Start Enroll */
+.enroll_form{
+    padding: 20px;
+    margin: 0;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: capitalize;
+    text-shadow: 2px 2px 5px teal;
+}
+.enroll{
+    
+    max-width: 600px;
+    margin: 50px 425px;
+    padding: 20px;
+    border: 1px solid wheat;
+}
+.enroll label{
+    padding: 20px;
+    margin: 0;
+    font-size: 15px;
+    text-decoration: underline;
+    text-transform: capitalize;
+    text-shadow: 1px 1px 1px teal;
+}
+input[type="text"]{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+#submit{
+    display: none;
+}
+.submit_btn{
+    display: block;
+    background: #0f766e;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#message{
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+}
+#submit:checked~#message{
+    display: block;
+}
+/* End Enrollment */
+
+/* Start Contact */
+.contact_title{
+    padding: 20px;
+    margin: 0;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: capitalize;
+    text-shadow: 2px 2px 5px teal;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    max-width: 1000px;
+    padding: 20px;
+    margin: 50px auto;
+}
+.form-section {
+  flex: 1;
+  max-width: 450px; 
+}
+.form-section label{
+    padding: 20px;
+    margin: 0;
+    font-size: 15px;
+    text-decoration: underline;
+    text-transform: capitalize;
+    text-shadow: 1px 1px 1px teal;
+}
+input[type="text"]{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+#submit_contact{
+    display: none;
+}
+.submit_but{
+    display: block;
+    background: #0f766e;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#contact_submit{
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+    margin-right: 50px;
+}
+#submit_contact:checked~#contact_submit{
+    display: block;
+}
+.contact-info {
+  flex: 1;
+}
+/* End Contact */
+
+/* Start Footer */
+.footer_logo{
+    width: 160px;
+    height: 90p;
+}
+.footer{
+    background-color: #0f766e;
+    color: white;
+    padding: 50px 80px;
+    margin: 50px;
+}
+.footer_grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 40px;
+    align-items: start;
+}
+.footer_grid h3{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.footer_grid ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.footer_grid li{
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+.footer_grid a{
+    color: white;
+    text-decoration: none;
+}
+.footer_grid a:hover{
+    text-decoration: underline;
+}
+.icon{
+    color: wheat;
+    font-size: 20px;
+    margin-right: 8px;
+}
+.hr{
+    border: none;
+    height: 2px;
+    background-color: aliceblue;
+    width: 60px;
+    margin: 10px 0;
+}
+
+/* End Footer */

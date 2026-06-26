@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Looping</h1>
+    <script>
+        //for loop
+        //for(intialize; condition; update){
+        // code
+        //}
+        for(let i = 1 ; i <= 5 ; i++ )
+    {
+        document.write("<h2> Hello konnichiwa" + (i) + "</h2>");
+    }
+    let laptopList = ['MacBook Pro','MacBook Air','MacBook','Mac Mini','iMac'];
+    //document.write("<h2>My Laptop is" +laptopList[0]+ "</h3>");
+    document.write(`<h2> My Laptop is ${laptopList[0]} </h3>`);
+        for(let i = 0; i < laptopList.length; i++)
+    {
+        document.write(`<h3> ${i+1}.My Laptop is ${laptopList[i]} </h3>`);
+    }
+    let num = prompt("Enter a number");
+    document.write(num);
+    document.write("<h2> Multiplication Table </h2>");
+    for(let i = 0; i <= 12; i++ )
+    {
+        let result = num * i;
+        document.write(`<h3> ${num} * ${i} = ${result} </h3>`);
+    }
+    //Nested Looping
+    for(let i = 0; i < 5; i++)
+    {
+        for(let j = 0; j <= i; j++)
+    {
+        document.write(` * `);
+    }
+    document.write(`<br>`)
+    }
+    for(let k = 5; k > 0; k--)
+    {
+        for(let v = 0; v < k; v++)
+    {
+        document.write(` * `);
+    }
+    document.write(`<br>`);
+    }
+    //while loop
+    let number = parseInt(prompt("Enter a number"));
+    //while(condition)
+    //{
+    //code
+    //update
+    //}
+    while(number < 100)
+    {
+        document.write(`Your Number is While Loop ${number} <br>`);
+        number += 10;
+    }
+    //do while loop
+    //do
+    //{
+    // code
+    //update
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    //ID Selector
+    <h1 id="myId">Dom Lesson</h1>
+    <h1>Dom <i>Lecture</i>Lesson</h1>
+    <p class="myClass">My Class 1</p>
+    <p class="myClass">My Class 2</p>
+    <p class="myClass">My Class 3</p>
+    <script>
+        let MyId = document.getElementById("myId");
+        document.write("myId");
+        document.write(MyId.innerText);
+        document.write(MyId.innerHTML)
+        let myclass = document.getElementsByClassName("myClass");
+        document.write(myClass);
+        document.write(myClass.innerHTML);
+        document.write(myClass.innerText);
+        let myQuery = document.querySelector("#myId");
+        console.log(myQuery.innerHTML);
+        console.log(myQuery.innerText);
+        let myQueryclass = document.querySelector(".myClass");
+        console.log(myClass.innerHTML);
+        console.log(myClass.innerText);
+    </script>
+</body>
+</html>

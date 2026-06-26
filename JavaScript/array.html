@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Array</h1>
+    <script>
+        let stu_list = ['Aung Aung','Hla Hla','Myo Myo'];
+        console.log(stu_list);
+        console.log(stu_list.length);
+        console.log(stu_list[2]);
+        //array Push
+        stu_list.push('Tun Tun');
+        console.log(stu_list);
+        //array Pop
+        stu_list.pop()
+        console.log(stu_list);
+        //array Unshift
+        stu_list.unshift('Ko Ko');
+        console.log(stu_list);
+        //array Shift
+        stu_list.shift();
+        console.log(stu_list);
+        //array sort
+        stu_list.sort();
+        console.log(stu_list);
+        let stu_list1 = ['Ko Ko','Mg Mg','Khin Khin','Hmwe'];
+        //array Reverse
+        stu_list1.reverse();
+        console.log(stu_list1);
+        stu_list1.sort().reverse();
+        console.log(stu_list1);
+        //array toString
+        console.log(stu_list1.toString());
+        //string to array
+        let stu_list2 = 'Ko Ko, Mg Mg, Hla Hla';
+        stu_list3 = stu_list2.split(',');
+        console.log(stu_list2);
+        let array1 = [1,2,3];
+        let array2 = [4,5,6];
+        let array3 = [7,8,9,10];
+        let result = array1.concat(array2,array3);
+        console.log(result);
+        let result1 = [...array1,...array2,...array3];
+        console.log(result1);
+    </script>
+</body>
+</html>
