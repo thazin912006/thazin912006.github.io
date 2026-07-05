@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="myDate">Time Format</h1>
+    <p id="myId">What Time!</p>
+    <script>
+       function getTimeFormat()
+       {
+        let mytime = new Date();
+        let getYear = mytime.getFullYear();
+        let getMonth = mytime.getMonth() + 1;
+        let getDate = mytime.getDate();
+        document.write(`${getYear} | ${getMonth} | ${getDate} `);
+        document.write(`<br>`);
+        let getDay = mytime.getDay();
+        if(getDay == 0)
+       {
+        document.write("Sunday");
+       }
+       else if(getDay == 1)
+       {
+        document.write("Monday");
+       }
+       else if(getDay == 2)
+       {
+        document.write("Tuesday");
+       }
+       else if(getDay == 3)
+       {
+        document.write("Wednesday");
+       }
+       else if(getDay == 4)
+       {
+        document.write("Thursday");
+       }
+       else if(getDay == 5)
+       {
+        document.write("Friday");
+       }
+       else{ document.write("Saturday"); }
+       document.write(`<br>`);
+        let getSecond = mytime.getSeconds();
+        if(getSecond > 60)
+       {
+            getMinute++;
+       }
+        let getMinute = mytime.getMinutes();
+        if(getMinute > 60)
+       {
+            getHour++;
+       }
+        let getHour = mytime.getHours();
+       if(getHour > 12)
+       {
+        getHour = getHour - 12;
+        document.write("P.M");
+        document.write(`  ${getHour} | ${getMinute}  | ${getSecond} <br> `) ;  
+       }
+       else{
+        document.write("A.M");
+        document.write(`  ${getHour} | ${getMinute}  |${getSecond} <br> `) ;  
+       }
+       let time = document.getElementById("myId");
+        time.innerHTML = getSecond;
+       }
+       setInterval(getTimeFormat,1000);
+    </script>
+</body>
+</html>

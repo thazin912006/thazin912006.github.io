@@ -6,27 +6,41 @@
     <title>Document</title>
 </head>
 <body>
-    //ID Selector
-    <h1 id="myId">Dom Lesson</h1>
-    <h1>Dom <i>Lecture</i>Lesson</h1>
+    <h1 id="myId">Dom <i>Lecture</i> Lesson</h1>
     <p class="myClass">My Class 1</p>
     <p class="myClass">My Class 2</p>
     <p class="myClass">My Class 3</p>
     <script>
+        //id selector
         let MyId = document.getElementById("myId");
-        document.write("myId");
-        document.write(MyId.innerText);
-        document.write(MyId.innerHTML)
+        console.log(MyId);
+        console.log(MyId.innerText);
+        //document.write(MyId.innerText);
+        console.log(MyId.innerHTML);
+        // class selector
         let myclass = document.getElementsByClassName("myClass");
-        document.write(myClass);
-        document.write(myClass.innerHTML);
-        document.write(myClass.innerText);
+        console.log(myclass);
+        console.log(myclass.innerText);
+        document.write("<br>")
+        document.write(myclass[1].innerText);
+        console.log(myclass.innerHTML);
+        //tag selector
+        let mytag = document.getElementsByTagName("p");
+        console.log(mytag);
+        console.log(mytag.innerHTML);
+        console.log(mytag.innerText);
+        //Query Selector
         let myQuery = document.querySelector("#myId");
         console.log(myQuery.innerHTML);
         console.log(myQuery.innerText);
         let myQueryclass = document.querySelector(".myClass");
-        console.log(myClass.innerHTML);
-        console.log(myClass.innerText);
+        console.log(myQueryclass.innerHTML);
+        console.log(myQueryclass.innerText);
+        //Query selector all for class and tag
+        let myfav = document.querySelectorAll(".myClass")
+        console.log(myfav);
+        console.log(myfav[1].innerHTML);
+        console.log(myfav[2].innerText);
     </script>
 </body>
 </html>

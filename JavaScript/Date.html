@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Date</h1>
+    <p id="myId">My Date</p>
+    <script>
+        //date
+        let date = new Date();
+        console.log(date);
+        let getYear = date.getFullYear();
+        console.log(getYear);
+        let getMonth = date.getMonth();
+        console.log(getMonth);//0-11
+        let getDate = date.getDate();
+        console.log(getDate);
+        let getDay = date.getDay();
+        console.log(getDay);//0-6
+        let getHour = date.getHours();
+        console.log(getHour);
+        let getMinute = date.getMinutes();
+        console.log(getMinute);
+        let getSecond = date.getSeconds();
+        console.log(getSecond);
+        let getTimeFormat = date.toLocaleString();
+        console.log(getTimeFormat);
+        // function getDateFormat(){
+        //     let myDate = new Date();
+        //     let getSecond = myDate.getSeconds();
+        //     document.write(getSecond);
+        // }
+         function getDateFormat(){
+            let myDate = new Date();
+            let getSecond = myDate.getSeconds();
+            //let getSecond = myDate.toLocaleDateString();
+           
+            let time = document.getElementById("myId");
+            time.innerHTML = getSecond;
+        }
+        //getDateFormat();
+        setInterval(getDateFormat,1000);
+    </script>
+</body>
+</html>

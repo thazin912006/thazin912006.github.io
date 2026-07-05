@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>What is my Number???</h1>
+    <h2>Let Start and Guess my Number!</h2>
+    <script>
+        let myNumber = 9;
+        let count = 1;
+        let win = 0;
+        while(win == 0){
+             alert("My Number is less than 20");
+            yourNumber = parseInt(prompt("Enter your Number"));
+            if(yourNumber != 9){
+                alert("Try Again!");
+                win = 0;
+                ++count;
+            }
+            else{
+                alert("Win!");
+                win = 1;
+                document.write(`You guess my Secrect Number at ${count} times!`);
+            }
+        }
+    </script>
+</body>
+</html>
