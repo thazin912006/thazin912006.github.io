@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-4.0.0.min.js"></script>
+</head>
+<body>
+    <h1>Add New Student</h1>
+    Name::<input type="text" name="stu_name" id="stu_name">
+    <br>
+    <br>
+    Email::<input type="email" name="stu_email" id="stu_email">
+    <br>
+    <br>
+    Phone::<input type="number" name="stu_ph" id="stu_ph">
+    <br>
+    <br>
+    Year::<select name="stu_year" id="stu_year">
+        <option value="">Choose Your Year</option>
+        <option value="1">First Year</option>
+        <option value="1">Second Year</option>
+        <option value="1">Third Year</option>
+    </select>
+    <br>
+    <br>
+    <button id="submit">Add Student</button>
+    <h1>Student List</h1>
+    <table border="1" cellspacing="0" cellpadding="30px">
+        <thead>
+        <tr >
+            <th>No</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Year</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+    </tbody>
+    </table>
+    <script>
+        $(document).ready(function(){
+            $('#submit').click(function(){
+                //access data when we click Add Student 
+                let name = $('#stu_name').val();
+                let email = $('#stu_email').val();
+                let phone = $('#stu_phone').val();
+                let year = $('#stu_year').val();
+                console.log(name,email,phone,year);
+
+                //we must create an Object 
+                let student = {
+                    stu_name : name,
+                    stu_email : email,
+                    stu_phone : phone,
+                    stu_year : year,
+                }
+                console.log(student);
+
+                let studentArray;
+
+                let studentData = localStorage.getItem('student_key');
+                console.log('The data we add is' +studentData);
+
+                //if studentData is null, we must create studentArray[]
+                if(studentData == null)
+                {
+                    studentArray = [];
+                }
+                //else the data we got must be changed to Array[] because we add more student Data
+                else{
+                    studentArray = JSON.parse(studentData);
+                }
+
+                //the data inside studentArray must be added to student that is Object we create
+                studentArray.push(student);
+                console.log(studentArray);
+
+                //localStorage can accept data by String 
+                let studentString = JSON.stringify(studentArray);
+                localStorage.setItem('student_key' , studentString);
+            })
+        })
+    </script>
+</body>
+</html>
