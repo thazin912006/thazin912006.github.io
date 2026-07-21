@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="fontawesome-free-7.2.0-web/js/all.min.js"></script>
+    <script src="jquery-4.0.0.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- Start Navigation -->
+ <header>
+    <nav class="nav">
+        <div>
+            IT Shop
+        </div>
+        <div>
+            <ul class="nav_bar">
+                <li>Home</li>
+                <li> 
+                    <a href="checkout.html">
+                    <button submit="shop" ><i class="fa fa-shopping-cart" ></i><span id="item-count">0</span></button>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+ </header>
+    <!-- End Navigation -->
+     <div>
+        <table border="1" cellspacing="0" cellpadding="30px">
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>Item Name</th>
+                    <th>Price</th>
+                    <th>Qty</th>
+                    <th>Amount</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+
+            </tbody>
+        </table>
+     </div>
+     <button id="order">Order Now</button>
+</body>
+</html>

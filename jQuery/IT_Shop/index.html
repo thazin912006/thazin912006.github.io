@@ -6,6 +6,8 @@
     <title>IT Shop</title>
     <link rel="stylesheet" href="style.css">
     <script src="fontawesome-free-7.2.0-web/js/all.min.js"></script>
+    <script src="jquery-4.0.0.min.js"></script>
+    <script src="script.js"></script>
 </head>
 <body>
     <!-- Start Navigation -->
@@ -17,7 +19,11 @@
         <div>
             <ul class="nav_bar">
                 <li>Home</li>
-                <li> <button submit="shop"><i class="fa-solid fa-cart-shopping"></i></button></li>
+                <li> 
+                    <a href="checkout.html">
+                    <button submit="shop" ><i class="fa fa-shopping-cart" ></i><span id="item-count">0</span></button>
+                    </a>
+                </li>
             </ul>
         </div>
     </nav>
@@ -29,49 +35,49 @@
             <img src="images/laptop.webp" alt="">
             <h2>Laptop 1</h2>
             <p>Price : 2300000MMK</p>
-            <button submit="add">Add to Cart</button>
+            <button submit="add" class="addToCart" data-id="1" data-name="Laptop 1" data-price="2300000">Add to Cart</button>
         </div>
         <div class="cart">
             <img src="images/laptop1.webp" alt="">
             <h2>Laptop 2</h2>
             <p>Price : 2000000MMK</p>
-            <button submit="add">Add to Cart</button>
+            <button submit="add" class="addToCart" data-id="2" data-name="Laptop 2" data-price="2000000">Add to Cart</button>
         </div>
         <div class="cart">
             <img src="images/laptop2.webp" alt="">
             <h2>Laptop 3</h2>
             <p>Price : 1900000MMK</p>
-            <button submit="add">Add to Cart</button>
+            <button submit="add" class="addToCart" data-id="3" data-name="Laptop 3" data-price="1900000">Add to Cart</button>
         </div>
         <div class="cart">
             <img src="images/laptop3.webp" alt="">
             <h2>Laptop 4</h2>
             <p>Price : 1850000MMK</p>
-            <button submit="add">Add to Cart</button>
+            <button submit="add" class="addToCart" data-id="4" data-name="Laptop 4" data-price="1850000">Add to Cart</button>
         </div>
         <div class="cart">
             <img src="images/ip14pro.webp" alt="">
             <h2>iPhone 1</h2>
             <p>Price : 3400000MMK</p>
-            <button submit="add">Add to Cart</button>
+            <button submit="add" class="addToCart" data-id="5" data-name="iPhone 1" data-price="3400000">Add to Cart</button>
         </div>
         <div class="cart">
             <img src="images/ip14pro1.webp" alt="">
             <h2>iPhone 2</h2>
             <p>Price : 3200000MMK</p>
-            <button submit="add">Add to Cart</button>
+            <button submit="add" class="addToCart" data-id="6" data-name="iPhone 2" data-price="3200000">Add to Cart</button>
         </div>
         <div class="cart">
             <img src="images/ip14pro2.webp" alt="">
             <h2>iPhone 3</h2>
             <p>Price : 3100000MMK</p>
-            <button submit="add">Add to Cart</button>
+            <button submit="add" class="addToCart" data-id="7" data-name="iPhone 3" data-price="3100000">Add to Cart</button>
         </div>
         <div class="cart">
             <img src="images/ip14pro4.webp" alt="">
             <h2>iPhone 4</h2>
             <p>Price : 3000000MMK</p>
-            <button submit="add">Add to Cart</button>
+            <button submit="add" class="addToCart" data-id="8" data-name="iPhone 4" data-price="3000000">Add to Cart</button>
         </div>
     </div>
  </section>

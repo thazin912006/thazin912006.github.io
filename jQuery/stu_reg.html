@@ -120,8 +120,8 @@
                         <td>${email}</td> 
                         <td>${phone} </td> 
                         <td> ${year}</td> 
-                        <td><button class="delete" data-key="${i}"> Delete </button> </td>
-                        <td><button class="edit" data-key="${i}" data-name="${name}" data-email="${email}" data-phone="${phone}"data-year="${year}"> Edit </button> </td>
+                        <td><button class="delete" data-key="${i}"> Delete </button>
+                        <button class="edit" data-key="${i}" data-name="${name}" data-email="${email}" data-phone="${phone}"data-year="${year}"> Edit </button> </td>
                     </tr>`;
                 })
                 $('#tbody').html(data);
@@ -165,6 +165,36 @@
             $('#up_phone').val(phone);
             $('#up_year').val(year);
         })
+
+        //For Update
+            $('#up').click(function(){
+                let key = $('#key').val();
+                let  name   = $('#up_name').val();
+                let  email   = $('#up_email').val();
+                let  phone   = $('#up_phone').val();
+                let   year  = $('#up_year').val();
+                console.log(key,name,email,phone,year);
+
+                let studentData = localStorage.getItem('student_key');
+                if(studentData)
+                {
+                 let studentData = localStorage.getItem('student_key');
+                if(studentData){
+                    let studentArray = JSON.parse(studentData);
+                   
+                    console.log(studentArray[0].stu_name);
+
+                    studentArray[key].stu_name = name;
+                     studentArray[key].stu_email = email;
+                      studentArray[key].stu_phone = phone;
+                       studentArray[key].stu_year = year;
+
+                    let studentString = JSON.stringify(studentArray);
+                    localStorage.setItem('student_key',studentString);
+                    getData();
+                }
+            }
+            })
         })
     </script>
 </body>
