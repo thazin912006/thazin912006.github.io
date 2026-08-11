@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
+</head>
+<body>
+    <h1 class="text-center  my-3 text-success">Student Registration Form</h1>
+    <div class="container">
+        <div class="row">
+            <div class="offset-lg-4 col-lg-4">
+                <form action="" method="post">
+                    <div class="mb-3">
+                        <label for="photo" class="form-label">Photo</label>
+                        <input type="file" name="photo" placeholder="Choose File" id="photo" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" name="name" placeholder="Enter your Name" id="name" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="dob" class="form-label">Date of Birth</label>
+                        <input type="date" name="dob" id="dob" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" name="email" placeholder="Enter your Email" id="email" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Phone</label>
+                        <input type="number" name="phone" placeholder="Enter your Phone" id="phone" class="form-control">
+                    </div>
+                    <label class="d-block form-label">Gender</label>
+                    <div class="form-check-inline">
+                        <input type="radio" class="form-check-input" name="gender" id="male">
+                        <label for="male" class="form-check-label">Male</label>
+                    </div>
+                    <div class="form-check-inline">
+                        <input type="radio" class="form-check-input" name="gender" id="female">
+                        <label for="female" class="form-check-label">Female</label>
+                    </div>
+                    <label class="d-block form-label mt-3">Hobbies</label>
+                    <div class="form-label">
+                        <input type="checkbox" name="sport" id="soprt" class="form-check-input">
+                        <label for="sport" class="form-check-label">Sport</label>
+                    </div>
+                    <div class="form-label">
+                        <input type="checkbox" name="reading" id="reading" class="form-check-input">
+                        <label for="reading" class="form-check-label">Reading</label>
+                    </div>
+                    <div class="form-label">
+                        <input type="checkbox" name="swimming" id="swimming" class="form-check-input">
+                        <label for="swimming" class="form-check-label">Swimming</label>
+                    </div>
+                    <div class="form-label">
+                        <input type="checkbox" name="music" id="music" class="form-check-input">
+                        <label for="music" class="form-check-label">Music</label>
+                    </div>
+                    <div class="form-label">
+                        <input type="checkbox" name="gaming" id="gaming" class="form-check-input">
+                        <label for="gaming" class="form-check-label">Gaming</label>
+                    </div>
+                    <label class="d-block form-label mt-3">Choose Your Education</label>
+                    <select class="form-select">
+                        <option value="#">Choose Your Education</option>
+                        <option value="0">First Year</option>
+                        <option value="1">Second Year</option>
+                        <option value="2">Third Year</option>
+                        <option value="3">Fourth Year</option>
+                        <option value="4">Fifth Year</option>
+                    </select>
+                    <label class="d-block form-label mt-3">Address</label>
+                    <div class="form-label">
+                        <textarea name="address" id="address" class="form-control"></textarea>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

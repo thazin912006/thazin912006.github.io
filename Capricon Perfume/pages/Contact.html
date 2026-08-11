@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memoria Fragrance Shop</title>
+    <!-- logo -->
+    <link rel="icon" href="../images/photo.jpg" type="image/x-icon">
+    <!-- Custom css -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../bootstrap-5.3.8-dist/css/bootstrap.min.css">
+
+    <!-- icons -->
+    <link rel="stylesheet" href="../fontawesome-free-7.3.1-web/css/all.min.css">
+</head>
+<body>
+    <!-- Sub Navigation -->
+    <div class="bg-dark">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="ms-4 d-none d-md-inline-block text-light">
+            Monsoon Fragrance <span class="fs-3 text-primary">Event</span>
+          </div>
+          <div class="d-inline-block text-light">
+            <p class="text-center">Enjoy up to <span class="fs-3 text-primary">20% OFF</span></p>
+          </div>
+          <div class="d-none d-sm-inline-block d-inline-block float-end text-light">
+            Throughout <span class="fs-3 text-primary">August</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Sub Navigation -->
+    <!-- Start Navigation -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary py-4">
+        <div class="container border-1">
+            <a class="navbar-brand" href="#">
+                <img src="../images/photo.jpg" class="logo" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link nav-tag active" aria-current="page" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link nav-tag dropdown-toggle" href="Shop.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Shop
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="Blog.html">Women</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="Shop.html">Men</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link nav-tag" href="FAQ.html">FAQ</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link nav-tag" href="Blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link nav-tag" href="About.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link nav-tag" href="Contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-tag" href="Contact.html">Log in</a>
+            </li>
+            <li class="nav-item mt-3">
+              <a class="nav-link" href="Blog.html">
+                <i class="fa-solid fa-heart"></i>
+                <span class="nav-noti bg-danger rounded-circle px-2 text-light">0</span>
+              </a>
+            </li>
+            <li class="nav-item mt-3">
+              <a class="nav-link" href="#">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="nav-noti bg-danger rounded-circle px-2 text-light">0</span>
+              </a>
+            </li>
+        </ul>
+        <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+            <button class="btn btn-outline-dark" type="submit">Search</button>
+        </form>
+    </div>
+    </div>
+    </nav>
+    <!-- End Navigation -->
+     <div class="container mt-3">
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29911.637834993337!2d96.11618720729734!3d20.42594408888655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c93cbbef7e7fad%3A0xbd9d527c3ef7c10d!2sYamethin!5e0!3m2!1sen!2smm!4v1786427471864!5m2!1sen!2smm" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+        <div class="col">
+          <form action="" id="joinForm" method="post">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" name="name" placeholder="Enter your Name" id="name" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="dob" class="form-label">Date of Birth</label>
+                        <input type="date" name="dob" id="dob" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" name="email" placeholder="Enter your Email" id="email" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Phone</label>
+                        <input type="number" name="phone" placeholder="Enter your Phone" id="phone" class="form-control">
+                    </div>
+                    <label class="d-block form-label mb-3">Gender</label>
+                    <div class="form-check-inline">
+                        <input type="radio" class="form-check-input" name="gender" id="male">
+                        <label for="male" class="form-check-label">Male</label>
+                    </div>
+                    <div class="form-check-inline">
+                        <input type="radio" class="form-check-input" name="gender" id="female">
+                        <label for="female" class="form-check-label">Female</label>
+                    </div>
+                    <div class="form-check-inline">
+                        <input type="radio" class="form-check-input" name="gender" id="others">
+                        <label for="female" class="form-check-label">Others</label>
+                    </div>
+                    <div class="mt-3">
+                      <button class="btn btn-outline-dark" type="submit">Submit</button>
+                    </div>
+                </form>
+                <div id="thankYou" style="display: none;" class="mt-3">
+                  <h3>Thank You for joining Us! <i class="fa-solid fa-heart"></i></h3>
+                  <p>We're happy to have you with us.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+        </div>
+      </div>
+     </div>
+    <!-- Start footer -->
+    <footer class="bg-dark text-light py-5 mt-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-3 mb-2">
+            <h3 class="text-light mb-3">Memoria <span class="text-danger">Perfume</span></h3>
+            <p class="text-primary">
+              Every scent holds a memory.
+            </p>
+            <div class="list-inline mb-2">
+              <a href="https://www.facebook.com/share/1bdYvnqN5q/" class="text-light me-2"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="@thazin74180" class="text-light me-2"><i class="fa-brands fa-tiktok"></i></a>
+              <a href="+95 9773 368985" class="text-light me-2"><i class="fa-brands fa-viber"></i></a>
+              <a href="@qLunaria" class="text-light me-2"><i class="fa-brands fa-telegram"></i></a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 mb-3">
+            <h5 class="text-uppercase text-primary mb-3">Quick Links</h5>
+            <ul class="list-unstyled mb-2">
+              <li><a href="../index.html" class="text-light text-decoration-none mb-2">Home</a></li>
+              <li><a href="About.html" class="text-light text-decoration-none mb-2">About</a></li>
+              <li><a href="Contact.html" class="text-light text-decoration-none mb-2">Contact Us</a></li>
+              <li><a href="Shop.html" class="text-light text-decoration-none mb-2">Shop</a></li>
+              <li><a href="Blog.html" class="text-light text-decoration-none mb-2">Services</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 mb-3">
+            <h5 class="text-uppercase text-primary mb-3">Customer Services</h5>
+            <ul class="list-unstyled mb-2">
+              <li><a href="FAQ.html" class="text-light text-decoration-none">FAQ</a></li>
+              <li><a href="Contact.html" class="text-light text-decoration-none">Return Policy</a></li>
+              <li><a href="Contact.html" class="text-light text-decoration-none">Privacy Policy</a></li>
+              <li><a href="Contact.html" class="text-light text-decoration-none">Terms and Conditions</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 mb-3">
+            <h5 class="text-uppercase text-primary mb-3">Contact us</h5>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-2">
+                <a href="Contact.html" class="text-light text-decoration-none fs-6">
+                  <i class="fa-solid fa-map-marker-alt"></i>
+                  Yamethin , Mandalay
+                </a>
+              </li>
+              <li class="mb-2">
+                <a href="tel:09 773 368985" class="text-light text-decoration-none fs-6">
+                  <i class="fa-solid fa-phone"></i>
+                  +95 9773 368985
+                </a>
+              </li>
+              <li class="mb-2">
+                <a href="mailto:tha32835@gmail.com" class="text-light text-decoration-none fs-6">
+                  <i class="fa-solid fa-envelope"></i>
+                  tha32835@gmail.com
+                </a>
+              </li>
+              <li class="mb-2">
+                <a href="Contact.html" class="text-light text-decoration-none fs-6">
+                  <i class="fa-solid fa-clock"></i>
+                  8:00 AM - 8:00 PM , Mon to Fri
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End footer -->
+
+    <!-- jQuery -->
+    <script src="../js/jquery-4.0.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+
+    <script>
+
+$(document).ready(function () {
+
+    $("#joinForm").submit(function (event) {
+
+        // Page reload မဖြစ်အောင်
+        event.preventDefault();
+
+        // Form ကိုဖျောက်
+        $("#joinForm").hide();
+
+        // Thank You စာသားကို ပြ
+        $("#thankYou").fadeIn();
+
+    });
+
+});
+
+</script>
+
+    <!-- js -->
+     <script src="../js/custom.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="../bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- icons -->
+    <script src="../fontawesome-free-7.3.1-web/js/all.min.js"></script>
+  
+</body>
+</html>    

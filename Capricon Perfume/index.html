@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memoria Fragrance Shop</title>
+    <!-- logo -->
+    <link rel="icon" href="images/photo.jpg" type="image/x-icon">
+    <!-- Custom css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
+
+    <!-- icons -->
+    <link rel="stylesheet" href="fontawesome-free-7.3.1-web/css/all.min.css">
+</head>
+<body>
+    
+    <!-- Sub Navigation -->
+    <div class="bg-dark">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="ms-4 d-none d-md-inline-block text-light">
+            Monsoon Fragrance <span class="fs-3 text-primary">Event</span>
+          </div>
+          <div class="d-inline-block text-light">
+            <p class="text-center">Enjoy up to <span class="fs-3 text-primary">20% OFF</span></p>
+          </div>
+          <div class="d-none d-sm-inline-block d-inline-block float-end text-light">
+            Throughout <span class="fs-3 text-primary">August</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Sub Navigation -->
+
+    <!-- Start Navigation -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary py-4">
+        <div class="container border-1">
+            <a class="navbar-brand" href="#">
+                <img src="images/photo.jpg" class="logo" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link nav-tag active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link nav-tag dropdown-toggle" href="pages/Shop.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Shop
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="pages/Blog.html">Women</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="pages/Shop.html">Men</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link nav-tag" href="pages/FAQ.html">FAQ</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link nav-tag" href="pages/Blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link nav-tag" href="pages/About.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link nav-tag" href="pages/Contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-tag" href="pages/Contact.html">Log in</a>
+            </li>
+            <li class="nav-item mt-3">
+              <a class="nav-link" href="pages/Blog.html">
+                <i class="fa-solid fa-heart"></i>
+                <span class="nav-noti bg-danger rounded-circle px-2 text-light">0</span>
+              </a>
+            </li>
+            <li class="nav-item mt-3">
+              <a class="nav-link" href="#">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="nav-noti bg-danger rounded-circle px-2 text-light">0</span>
+              </a>
+            </li>
+        </ul>
+        <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+            <button class="btn btn-outline-dark" type="submit">Search</button>
+        </form>
+    </div>
+    </div>
+    </nav>
+    <!-- End Navigation -->
+
+     <!-- Start Header -->
+    <div class="container mt-3">
+    <div id="carouselExampleDark" class="carousel carousel-dark slide">
+        <!-- <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div> -->
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+         <video autoplay muted loop controls style="width: 100%; height: 550px; object-fit: cover;">
+            <source src="files/men.mp4" type="video/mp4">
+          </video>
+          <div class="carousel-caption d-none d-md-block">
+            <a href="pages/Shop.html">
+              <button class="btn btn-light">Shop Now</button>
+            </a>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <video autoplay muted loop controls style="width: 100%; height: 550px; object-fit: cover;">
+            <source src="files/women-1.mp4" type="video/mp4">
+          </video>
+          <div class="carousel-caption d-none d-md-block">
+            <a href="pages/Shop.html">
+              <button class="btn btn-light">Shop Now</button>
+            </a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <video autoplay muted loop controls style="width: 100%; height: 550px; object-fit: cover;">
+            <source src="files/men-1.mp4" type="video/mp4">
+          </video>
+          <div class="carousel-caption d-none d-md-block">
+            <a href="pages/Shop.html">
+              <button class="btn btn-light">Shop Now</button>
+            </a>
+          </div>
+        </div>
+      </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    </div>
+    <!-- End Header -->
+
+    <!-- Start Services -->
+     <div class="container mt-3">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+          <div class="col">
+            <div class="card border-0 h-100 text-center shadow-sm service_card">
+              <div class="card-body">
+                <div class="bg-danger text-light rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3 service_icon">
+                  <i class="fa-solid fa-truck-fast fa-2x"></i>
+                </div>
+                <h5 card-title fw-bold>Free Delivery</h5>
+                <p>Enjoy free shopping on all orders over 50,000 Ks.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-0 h-100 text-center shadow-sm service_card">
+              <div class="card-body">
+                <div class="bg-danger text-light rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3 service_icon">
+                  <i class="fa-brands fa-intercom fa-2x"></i>
+                </div>
+                <h5 card-title fw-bold>24/7 Customer Care</h5>
+                <h6>Always Here for You</h6>
+                <p>
+                  Our customer care team is here to assist you anytime <i class="fa-solid fa-heart"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-0 h-100 text-center shadow-sm service_card">
+              <div class="card-body">
+                <div class="bg-danger text-light rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3 service_icon">
+                  <i class="fa-solid fa-lock fa-2x"></i>
+                </div>
+                <h5 card-title fw-bold>Secure Payment</h5>
+                <p>Your payment is safe, secure and protected with us <i class="fa-solid fa-key"></i></p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-0 h-100 text-center shadow-sm service_card">
+              <div class="card-body">
+                <div class="bg-danger text-light rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3 service_icon">
+                  <i class="fa-solid fa-arrow-rotate-left fa-2x"></i>
+                </div>
+                <h5 card-title fw-bold>14-Day Exchange</h5>
+                <h6>Exchange it within 14 days</h6>
+                <p>Received a defective item?</p>
+              </div>
+            </div>
+          </div>
+        </div>
+     </div>
+    <!-- End Services -->
+
+    <!--Start New Arrival -->
+    <div class="container mt-3">
+      <div class="text-center">
+        <h2 class="fw-bold">New <span class="text-danger"> Arrivals </span></h2>
+        <div class="title_underline mb-2"></div>
+        <p class="text-muted">Check out our latest promotions and discounts on our products.</p>
+      </div>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mt-3">
+        <div class="col"> 
+          <div class="card position-relative new">
+            <span class="badge bg-danger position-absolute top-0 start-0">15% OFF</span>
+            <button class="btn btn-sm btn-danger position-absolute top-0 end-0 rounded-circle">
+              <i class="fa-solid fa-heart"></i>
+            </button>
+            <img src="images/couple-chanel.jpg" class="card-img-top new" alt="">
+            <div class="card-body text-center">
+              <a href="pages/Shop.html" class="card-title fw-bold text-decoration-none">Couple Set</a>
+              <!-- Price -->
+              <div>
+                <span class="text-muted text-decoration-line-through mb-2">1,600,000 Ks</span>
+                <span class="text-danger fw-bold fs-5">1,360,000 Ks</span>
+              </div>
+              <div>
+                <a href="pages/Shop.html" class="btn btn-sm btn-outline-dark rounded-pill me-2">
+                  <i class="fa-solid fa-circle-info"></i>
+                  Shop Now
+                </a>
+                <a href="#" class="btn btn-sm btn-danger rounded-pill">
+                  <i class="fa-solid fa-bag-shopping"></i>
+                  Add
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col"> 
+          <div class="card position-relative new">
+            <span class="badge bg-danger position-absolute top-0 start-0">15% OFF</span>
+            <button class="btn btn-sm btn-danger position-absolute top-0 end-0 rounded-circle">
+              <i class="fa-solid fa-heart"></i>
+            </button>
+            <img src="images/couple-dior.jpg" class="card-img-top new" alt="">
+            <div class="card-body text-center">
+              <a href="pages/Shop.html" class="card-title fw-bold text-decoration-none">Couple Set</a>
+              <!-- Price -->
+              <div>
+                <span class="text-muted text-decoration-line-through mb-2">1,600,000 Ks</span>
+                <span class="text-danger fw-bold fs-5">1,360,000 Ks</span>
+              </div>
+              <div>
+                <a href="pages/Shop.html" class="btn btn-sm btn-outline-dark rounded-pill me-2">
+                  <i class="fa-solid fa-circle-info"></i>
+                  Shop Now
+                </a>
+                <a href="#" class="btn btn-sm btn-danger rounded-pill">
+                  <i class="fa-solid fa-bag-shopping"></i>
+                  Add
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col"> 
+          <div class="card position-relative new">
+            <span class="badge bg-danger position-absolute top-0 start-0">15% OFF</span>
+            <button class="btn btn-sm btn-danger position-absolute top-0 end-0 rounded-circle">
+              <i class="fa-solid fa-heart"></i>
+            </button>
+            <img src="images/couple-chanel-1.jpg" class="card-img-top new" alt="">
+            <div class="card-body text-center">
+              <a href="pages/Shop.html" class="card-title fw-bold text-decoration-none">Couple Set</a>
+              <!-- Price -->
+              <div>
+                <span class="text-muted text-decoration-line-through mb-2">1,600,000 Ks</span>
+                <span class="text-danger fw-bold fs-5">1,360,000 Ks</span>
+              </div>
+              <div>
+                <a href="pages/Shop.html" class="btn btn-sm btn-outline-dark rounded-pill me-2">
+                  <i class="fa-solid fa-circle-info"></i>
+                  Shop Now
+                </a>
+                <a href="#" class="btn btn-sm btn-danger rounded-pill">
+                  <i class="fa-solid fa-bag-shopping"></i>
+                  Add
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End New Arrival -->
+
+    <!-- Start Category -->
+    <div class="container">
+      <div>
+        <h2 class="fw-bold">Our <span class="text-danger">Categories</span></h2>
+        <div class="title_underline mb-2"></div>
+        <p class="text-center text-muted">Check out our latest promotions and discounts products.</p>
+      </div>
+
+    <div class="row row-cols-1 row-cols-md-2 g-4 mt-3">
+      <div class="col">
+        <div class="card h-100 position-relative category_card">
+          <img src="images/women-col.jpg" class="card-img-top Category" alt="">
+          <div class="position-absolute top-50 start-50 translate-middle">
+            <h3 class="card-title fw-bold text-center text-white">Women</h3>
+            <h3 class="text-center text-primary mb-2">For Collection</h3>
+            <a href="pages/Shop.html" class="btn btn-danger rounded-pill">
+              <i class="fa-solid fa-bag-shopping"></i>
+              Shop Now
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 position-relative category_card">
+          <img src="images/men-col.jpg" class="card-img-top Category" alt="">
+          <div class="position-absolute top-50 start-50 translate-middle">
+            <h3 class="card-title fw-bold text-center text-white">Men</h3>
+            <h3 class="text-center text-primary mb-2">For Collection</h3>
+            <a href="pages/Shop.html" class="btn btn-danger rounded-pill">
+              <i class="fa-solid fa-bag-shopping"></i>
+              Shop Now
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+    <!-- End Category -->
+   
+  <div class="container mt-3">
+    <div>
+        <h2 class="fw-bold">Our <span class="text-danger">Partner</span></h2>
+    </div>
+
+    <section class="customer-logos slider mt-3">
+      <div class="slide">
+        <img src="images/paternar-chanel.webp">
+      </div>
+      <div class="slide">
+        <img src="images/paternar-dior.webp">
+      </div>
+      <div class="slide">
+        <img src="images/paternar-ysl.jpg">
+      </div>
+      <div class="slide">
+        <img src="images/paternar-vs.png">
+      </div>
+      <div class="slide">
+        <img src="images/paternarr-ch.webp">
+      </div>
+      <div class="slide">
+        <img src="images/paternar-ga.jpg">
+      </div>
+      <div>
+        <img src="images/paternar-az.jpg" >
+      </div>
+      <!-- <div class="slide">
+        <img src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg">
+      </div> -->
+    </section>
+  </div>
+    <!-- Start footer -->
+    <footer class="bg-dark text-light py-5 mt-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-3 mb-2">
+            <h3 class="text-light mb-3">Memoria <span class="text-danger">Perfume</span></h3>
+            <p class="text-primary">
+              Every scent holds a memory.
+            </p>
+            <div class="list-inline mb-2">
+              <a href="https://www.facebook.com/share/1bdYvnqN5q/" class="text-light me-2"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="@thazin74180" class="text-light me-2"><i class="fa-brands fa-tiktok"></i></a>
+              <a href="+95 9773 368985" class="text-light me-2"><i class="fa-brands fa-viber"></i></a>
+              <a href="@qLunaria" class="text-light me-2"><i class="fa-brands fa-telegram"></i></a>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3 mb-3">
+            <h5 class="text-uppercase text-primary mb-3">Quick Links</h5>
+            <ul class="list-unstyled mb-2">
+              <li><a href="index.html" class="text-light text-decoration-none mb-2">Home</a></li>
+              <li><a href="pages/About.html" class="text-light text-decoration-none mb-2">About</a></li>
+              <li><a href="pages/Contact.html" class="text-light text-decoration-none mb-2">Contact Us</a></li>
+              <li><a href="pages/Shop.html" class="text-light text-decoration-none mb-2">Shop</a></li>
+              <li><a href="pages/Blog.html" class="text-light text-decoration-none mb-2">Services</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 mb-3">
+            <h5 class="text-uppercase text-primary mb-3">Customer Services</h5>
+            <ul class="list-unstyled mb-2">
+              <li><a href="pages/FAQ.html" class="text-light text-decoration-none">FAQ</a></li>
+              <li><a href="pages/Contact.html" class="text-light text-decoration-none">Return Policy</a></li>
+              <li><a href="pages/Contact.html" class="text-light text-decoration-none">Privacy Policy</a></li>
+              <li><a href="pages/Contact.html" class="text-light text-decoration-none">Terms and Conditions</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 mb-3">
+            <h5 class="text-uppercase text-primary mb-3">Contact us</h5>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-2">
+                <a href="pages/Contact.html" class="text-light text-decoration-none fs-6">
+                  <i class="fa-solid fa-map-marker-alt"></i>
+                  Yamethin , Mandalay
+                </a>
+              </li>
+              <li class="mb-2">
+                <a href="tel:09 773 368985" class="text-light text-decoration-none fs-6">
+                  <i class="fa-solid fa-phone"></i>
+                  +95 9773 368985
+                </a>
+              </li>
+              <li class="mb-2">
+                <a href="mailto:tha32835@gmail.com" class="text-light text-decoration-none fs-6">
+                  <i class="fa-solid fa-envelope"></i>
+                  tha32835@gmail.com
+                </a>
+              </li>
+              <li class="mb-2">
+                <a href="pages/Contact.html" class="text-light text-decoration-none fs-6">
+                  <i class="fa-solid fa-clock"></i>
+                  8:00 AM - 8:00 PM , Mon to Fri
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End footer -->
+
+    <!-- jQuery -->
+    <script src="js/jquery-4.0.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+
+    <!-- js -->
+     <script src="js/custom.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- icons -->
+    <script src="fontawesome-free-7.3.1-web/js/all.min.js"></script>
+  
+</body>
+</html>
